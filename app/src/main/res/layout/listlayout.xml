@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF0F5"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Enter_Your_Title"
+        android:id="@+id/tvtitle"
+        android:textColor="#531937"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTitle"
+        android:textColor="#531937"
+        android:hint="@string/Enter_Your_Title"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Description"
+        android:id="@+id/tvDescription"
+        android:textColor="#531937"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDescription"
+        android:hint="@string/Description"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#531937"
+        android:text="@string/Identification_Number"
+        android:id="@+id/tvid"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etid"
+        android:textColor="#531937"
+        android:hint="@string/Identification_Number"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Time"
+        android:textColor="#531937"
+        android:id="@+id/tvtime"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTime"
+        android:hint="@string/Time"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Update"
+        android:textSize="25sp"
+        android:backgroundTint="#635767"
+        android:id="@+id/BtnUpdate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Delete"
+        android:textSize="25sp"
+        android:backgroundTint="#635767"
+        android:id="@+id/Btndelete"/>
+
+
+
+
+</LinearLayout>

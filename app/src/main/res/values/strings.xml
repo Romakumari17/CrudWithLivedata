@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CrudWithLivedata</string>
+    <string name="Enter_Your_Title">Enter Title</string>
+    <string name="Description">Description</string>
+    <string name="Update">Update</string>
+    <string name="ID">Id</string>
+    <string name="Identification_Number">Identification Number\n</string>
+    <string name="Time">Time</string>
+    <string name="Delete">Delete</string>
+</resources>

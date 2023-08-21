@@ -12,7 +12,7 @@ data class ListEntity(
     @ColumnInfo
     var Descripation:String?=null,
     @ColumnInfo
-    var Time:Int=0,
+    var Time:String?=null,
     @ColumnInfo
     var Title: String?=null
 

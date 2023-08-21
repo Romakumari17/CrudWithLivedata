@@ -7,32 +7,33 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
 
-class ListViewModel(application: Application):AndroidViewModel( application)
-{
-    var itemlist:LiveData<List<ListEntity>>
-    var listDaoInterface:ListDaoInterface
+class ListViewModel(application: Application) : AndroidViewModel(application) {
+    var itemlist: LiveData<List<ListEntity>>
+    var listDaoInterface: ListDaoInterface
+
     init {
-        listDaoInterface=ListDatabase.getDatabase(application).listDaoInterface()
-        itemlist=listDaoInterface.getList()
+        listDaoInterface = ListDatabase.getDatabase(application).listDaoInterface()
+        itemlist = listDaoInterface.getList()
     }
 
-         fun insertitem(listEntity: ListEntity){
-            viewModelScope.launch {
+    fun insertitem(listEntity: ListEntity) {
+        viewModelScope.launch {
             listDaoInterface.insertitem(listEntity)
         }
+    }
 
-        fun deleteitem(listEntity: ListEntity){
-            viewModelScope.launch {
-                listDaoInterface.deleteitem(listEntity)
+    fun deleteitem(listEntity: ListEntity) {
+        viewModelScope.launch {
+            listDaoInterface.deleteitem(listEntity)
 
         }
-            fun updateitem(listEntity: ListEntity){
-                viewModelScope.launch {
-                    listDaoInterface.updateitem(listEntity)
-
-                }
     }
 
-       }
+    fun updateitem(listEntity: ListEntity) {
+        viewModelScope.launch {
+            listDaoInterface.updateitem(listEntity)
 
+        }
     }
+
+}

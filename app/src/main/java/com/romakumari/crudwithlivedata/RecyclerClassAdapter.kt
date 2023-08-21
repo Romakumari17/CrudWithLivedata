@@ -34,7 +34,7 @@ class RecyclerClassAdapter(var list: ArrayList<ListEntity>,var listInterface: li
     override fun onBindViewHolder(holder: RecyclerClassAdapter.ViewHolder, position: Int) {
       holder.etTitle.setText(list[position].Title)
       holder.etTime.setText(list[position].Time)
-      holder.etid.setText(list[position].id)
+      holder.etid.setText(list[position].id.toString())
       holder.etDescripation.setText(list[position].Descripation)
         holder.customBtnUpdate.setOnClickListener {
             listInterface.onUpdateClick(list[position], position)
@@ -47,8 +47,8 @@ class RecyclerClassAdapter(var list: ArrayList<ListEntity>,var listInterface: li
     override fun getItemCount(): Int {
        return list.size
     }
-    fun setitem(list: ArrayList<ListEntity>){
-        this.list=list
-        notifyDataSetChanged()
-    }
+//    fun setitem(list: ArrayList<ListEntity>){
+//        this.list=list
+//        notifyDataSetChanged()
+//    }
 }

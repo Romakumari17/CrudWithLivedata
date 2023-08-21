@@ -99,6 +99,7 @@ class MainActivity : AppCompatActivity(),listInterface {
                     listViewModel.updateitem(ListEntity(
                         id = student.id,
                         Descripation = dialogBinding.Description.text.toString(),
+                        Time = SimpleDateFormat("dd/MM/yyyy").format(Calendar.getInstance().time),
                         Title = dialogBinding.Title.text.toString()))
                     dialog.dismiss()
                 }
